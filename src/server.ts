@@ -7,11 +7,9 @@ import { createConnection } from '@notifications/queues/connection';
 import { healthRoutes } from '@notifications/routes';
 import { createConnectionElasticsearch } from '@notifications/elasticsearch';
 import { config } from '@notifications/config';
-import { Level } from '@notifications/helpers';
 import { Channel } from 'amqplib';
-
-import { winstonLogger } from './dist';
-import { consumeAuthEmailMessages, consumeOrderEmailMessages } from './queues/email.consumer';
+import { consumeAuthEmailMessages, consumeOrderEmailMessages } from '@notifications/queues/email.consumer';
+import { winstonLogger, Level } from '@mohamedramadan14/freelance-shared';
 
 const SERVER_PORT = 4001;
 const SERVICE = 'Notification Service';

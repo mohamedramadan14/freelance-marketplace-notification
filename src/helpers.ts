@@ -4,14 +4,7 @@ import { Logger } from 'winston';
 import { config } from '@notifications/config';
 import nodemailer, { Transporter } from 'nodemailer';
 import Email from 'email-templates';
-
-import { IEmailLocals, winstonLogger } from './dist';
-enum Level {
-  debug = 'debug',
-  info = 'info',
-  warn = 'warn',
-  error = 'error'
-}
+import { IEmailLocals, winstonLogger, Level } from '@mohamedramadan14/freelance-shared';
 
 const logger: Logger = winstonLogger(`${config.ELASTICSEARCH_URL}`, 'NotificationService', Level.debug);
 

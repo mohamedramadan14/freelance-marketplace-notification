@@ -1,10 +1,9 @@
 import { Logger } from 'winston';
 import express, { Express } from 'express';
+import { winstonLogger , Level} from '@mohamedramadan14/freelance-shared';
+import { config } from '@notifications/config';
+import { start } from '@notifications/server';
 
-import { winstonLogger } from './dist';
-import { config } from './config';
-import { start } from './server';
-import { Level } from './helpers';
 
 const logger: Logger = winstonLogger(`${config.ELASTICSEARCH_URL}`, 'notificationApp', Level.debug);
 

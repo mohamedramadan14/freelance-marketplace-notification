@@ -1,6 +1,6 @@
 import { config } from '@notifications/config';
-import { IEmailLocals, winstonLogger } from '@notifications/dist';
-import { Level, prepareEmail } from '@notifications/helpers';
+import { IEmailLocals, winstonLogger, Level } from '@mohamedramadan14/freelance-shared';
+import { prepareEmail } from '@notifications/helpers';
 import { Logger } from 'winston';
 
 const logger: Logger = winstonLogger(`${config.ELASTICSEARCH_URL}`, 'MailTransport', Level.debug);

@@ -1,9 +1,7 @@
 import { Client } from '@elastic/elasticsearch';
 import { Logger } from 'winston';
-
-import { winstonLogger } from './dist';
-import { config } from './config';
-import { Level } from './helpers';
+import { winstonLogger, Level } from '@mohamedramadan14/freelance-shared';
+import { config } from '@notifications/config';
 
 const logger: Logger = winstonLogger(`${config.ELASTICSEARCH_URL}`, 'notificationElasticSearchServer', Level.debug);
 

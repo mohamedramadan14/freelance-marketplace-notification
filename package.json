@@ -42,7 +42,7 @@
   },
   "dependencies": {
     "@elastic/elasticsearch": "^8.12.2",
-    "@mohamedramadan14/freelance-shared": "^0.0.14",
+    "@mohamedramadan14/freelance-shared": "^0.0.17",
     "amqplib": "^0.10.3",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.9",

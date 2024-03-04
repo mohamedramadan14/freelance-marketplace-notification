@@ -1,11 +1,9 @@
 import { config } from '@notifications/config';
-import { IEmailLocals, winstonLogger } from '@notifications/dist';
-import { Level } from '@notifications/helpers';
+import { IEmailLocals, winstonLogger, Level } from '@mohamedramadan14/freelance-shared';
 import { Channel, ConsumeMessage } from 'amqplib';
 import { Logger } from 'winston';
 import { sendEmail } from '@notifications/queues/mail.transport';
-
-import { createConnection } from './connection';
+import { createConnection } from '@notifications/queues/connection';
 
 const logger: Logger = winstonLogger(`${config.ELASTICSEARCH_URL}`, 'RabbitMQEmailConsumer', Level.debug);
 

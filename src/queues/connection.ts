@@ -1,8 +1,7 @@
 import { Channel, Connection, connect } from 'amqplib';
 import { config } from '@notifications/config';
 import { Logger } from 'winston';
-import { winstonLogger } from '@notifications/dist';
-import { Level } from '@notifications/helpers';
+import { winstonLogger, Level } from '@mohamedramadan14/freelance-shared';
 
 const logger: Logger = winstonLogger(`${config.ELASTICSEARCH_URL}`, 'NotificationQueueConnection', Level.debug);
 
